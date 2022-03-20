@@ -16,7 +16,7 @@ class MainKtTest {
         val accountType = VK
         val previous = 55000000L
         val amount = 8000000L
-        val expected = 80000001L
+        val expected = 8000000L
 
         val result = transfer(accountType, previous, amount)
 
@@ -58,7 +58,7 @@ class MainKtTest {
 
         assertEquals(expected, result)
     }
-
+    
     @Test
     fun calculate_transfer_visa() {
         val accountType = VISA

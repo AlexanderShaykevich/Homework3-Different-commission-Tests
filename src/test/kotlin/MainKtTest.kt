@@ -47,42 +47,18 @@ class MainKtTest {
         assertEquals(expected, result)
     }
 
-//    @Test
-//    fun calculate_transfer_maestro_big_previous() {
-//        val accountType = MAESTRO
-//        val previous = 55000000L
-//        val amount = 8000000L
-//        val expected = 7518000.0
-//
-//        val result = transfer(accountType, previous, amount)
-//
-//        assertEquals(expected, result)
-//    }
-//
-//    @Test
-//    fun calculate_transfer_maestro_small_previous() {
-//        val accountType = MAESTRO
-//        val previous = 550L
-//        val amount = 8000000L
-//        val expected = 8000000L
-//
-//        val result = transfer(accountType, previous, amount)
-//
-//        assertEquals(expected, result)
-//    }
-
     @Test
     fun calculate_transfer_visa_minCommission() {
         val accountType = VISA
         val previous = 5000000L
-        val amount = 8000L
-        val expected = 4500L
+        val amount = 5000L
+        val expected = 1500L
 
         val result = transfer(accountType, previous, amount)
 
         assertEquals(expected, result)
     }
-
+    
     @Test
     fun calculate_transfer_visa() {
         val accountType = VISA
@@ -94,31 +70,6 @@ class MainKtTest {
 
         assertEquals(expected, result)
     }
-
-//    @Test
-//    fun calculate_transfer_mir_minCommission() {
-//        val accountType = MIR
-//        val previous = 5000000L
-//        val amount = 8000L
-//        val expected = 4500L
-//
-//        val result = transfer(accountType, previous, amount)
-//
-//        assertEquals(expected, result)
-//    }
-//
-//    @Test
-//    fun calculate_transfer_mir() {
-//        val accountType = MIR
-//        val previous = 5000000L
-//        val amount = 8000000L
-//        val expected = 7400000.0
-//
-//        val result = transfer(accountType, previous, amount)
-//
-//        assertEquals(expected, result)
-//    }
-
 
     @Test
     fun calculate_transfer_default_amount() {
